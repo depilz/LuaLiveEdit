@@ -4,7 +4,7 @@ Enhance your development process with LiveEdit, a dynamic tool that allows for r
 
 ## Installation
 
-1. **Download:** Obtain the `LiveEdit.lua` file from this repository.
+1. **Download:** Obtain the `LiveEdit.lua` and the `edit.lua` files from this repository.
 2. **Add to Project:** Incorporate the file into your Solar2D project.
 3. **Include in Code:** Import `LiveEdit.lua` in your `main.lua` or in other Lua files where debugging is required.
 
@@ -14,7 +14,11 @@ Enhance your development process with LiveEdit, a dynamic tool that allows for r
 
 ## Usage
 
-Insert the following line at the desired points in your code to live stream the variables and manipulate them in real-time.
+There is two ways to use LiveEdit:
+
+1. **Selecting target:** Select the object you want to edit by shift scrolling over it. The target object will be highlighted inside a rectangle with its name on the top. You can then edit the object's properties in `edit.lua` or just move it around with the mouse.
+
+2. **LiveEdit Function:** Insert the following line at the desired points in your code to live stream the variables and manipulate them in real-time.
 
 ```lua
 liveEdit(fn)
