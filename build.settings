@@ -1,0 +1,38 @@
+settings = {
+  orientation = {
+    default   = "landscapeRight",
+    supported = { "landscapeRight", "landscapeLeft", "portrait" }
+  },
+
+  iphone = {
+    plist = {
+      UIStatusBarHidden = true,
+      UIPrerenderedIcon = true, -- set to false for "shine" overlay
+      CFBundleIconFiles = {
+          "Icon.png" ,
+          "Icon@2x.png" ,
+          "Icon-40.png" ,
+          "Icon-40@2x.png" ,
+          "Icon-60.png" ,
+          "Icon-60@2x.png" ,
+          "Icon-72.png" ,
+          "Icon-72@2x.png" ,
+          "Icon-76.png" ,
+          "Icon-76@2x.png" ,
+          "Icon-Small-50.png" ,
+          "Icon-Small-50@2x.png" ,
+          "Icon-Small.png" ,
+          "Icon-Small@2x.png"
+      }
+    }
+  },
+  android = {
+    -- useGoogleServicesJson = true,
+    versionCode   = "20",
+    minSdkVersion = "16",
+    usesFeatures  = {},
+  },
+  splashScreen = {
+		enable = false,
+	},
+}
